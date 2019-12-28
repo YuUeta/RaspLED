@@ -5,16 +5,15 @@ Raspberry pi3 を使用したデバイスドライバの作成
 ```
 sudo make
 sudo insmod myled.ko
-sudo chmod 666 /dev/myled0
 echo [コマンド] > /dev/myled0
 ```
-### コマンドの種類及び動作
-+ 1 : 1つ目のLEDが点灯する
-+ 2 : 0.3秒の速度でLEDが赤→黄→緑→青→赤の順番で10回点灯後すべてののLEDが点灯する
-+ 3 : 0.3秒の速度でLEDが青→緑→黄→赤→青の順番で10回点灯後すべてののLEDが点灯する
-+ 4 : すべてのLEDを消す
+### コマンド
++ 1 : 1つ目のLEDのみを点灯する
++ 2 : 2つ目のLEDのみを点灯する
++ 3 : 3つ目のLEDのみを点灯する
++ 4 : すべてのLEDを間欠点灯する
 + 5 : すべてのLEDを消す
 
 ## 動画URL
 作成したデバイスドライバの動作動画  
-https://youtu.be/7xPbnW0739Q
+https://youtu.be/Zni6cFDGlNU
